@@ -8,7 +8,7 @@ const Menu = () => {
         {arr?.map((item) => (
           <li
             key={item}
-            className="text-black hover:text-sky-500 cursor-pointer border-b-2 border-b-neutral-200 w-full py-4 hover:border-b-sky-500"
+            className="text-black hover:text-[navy] cursor-pointer border-b-2 border-b-neutral-200  w-full py-4 hover:border-b-[navy] text-center"
           >
             {item}
           </li>

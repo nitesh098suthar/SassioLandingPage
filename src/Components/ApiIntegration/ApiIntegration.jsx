@@ -7,11 +7,11 @@ export const Roadmap = ({ data }) => {
     <div className="flex h-24">
       <div>
         <div
-          style={{ backgroundColor: data.number === 1 && "rgb(139,92,246)" }}
+          style={{ backgroundColor: data.number === 1 && "navy" }}
           className="bg-violet-50 p-4 rounded-xl h-14 w-14 grid place-items-center"
         >
           <p
-            style={{ color: data.number !== 1 && "rgb(139,92,246)" }}
+            style={{ color: data.number !== 1 ? "#1A3553" : "white"}}
             className="font-semibold text-start"
           >
             {data.number}
@@ -22,8 +22,8 @@ export const Roadmap = ({ data }) => {
         )}
       </div>
       <div className="w-[70%]  mx-10">
-        <h5 className="text-black font-semibold text-start">{data.title}</h5>
-        <p className="text-black text-xs text-start">{data.text}</p>
+        <h5 className="text-[#1A3553] font-semibold text-start">{data.title}</h5>
+        <p className="text-[#1A3553] text-xs text-start">{data.text}</p>
       </div>
     </div>
   );
@@ -31,7 +31,7 @@ export const Roadmap = ({ data }) => {
 
 const ApiIntegration = () => {
   return (
-    <div className="flex bg-white h-screen w-screen justify-center items-center">
+    <div className="flex bg-white h-screen  w-full justify-center items-center">
       <div className="textContainer w-1/3 space-y-8 ">
         <Title head="API Integration" center="start" />
         <div className=" h-[50vh] w-[70%]">

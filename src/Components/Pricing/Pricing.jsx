@@ -5,12 +5,12 @@ import { pricingData } from "../../api/data";
 
 const Pricing = () => {
   return (
-    <div className="h-full w-screen bg-white m-0 pt-14">
-      <div className="bg-everything-need min-h-screen w-screen bg-cover bg-center bg-no-repeat">
-        <div>
+    <div className="h-[130vh] w-full bg-white m-0 pt-14 border-2 border-transparent ">
+      <div className="bg-everything-need h-[118vh] w-full bg-cover bg-center bg-no-repeat border-2 border-transparent">
+        <div className="mt-[7rem]">
           <Title head="Simple Pricing for your Team" />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           {pricingData?.map((item) => (
             <PriceCard key={item.charge} data={item} />
           ))}

@@ -5,8 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('/src/assets/images/1Artboard 11.png')",
-        "hero-asset":
-          "url('/src/assets/images/1Hero section elements13.5x10.png')",
+        "hero-asset": "url('/src/assets/images/Hero section elements.png')",
         analytics: "url('/src/assets/images/Home_page-transformed.png')",
         "dashed-poly": "url('/src/assets/images/1Dashed polygone13.5x10.png')",
         "everything-need":

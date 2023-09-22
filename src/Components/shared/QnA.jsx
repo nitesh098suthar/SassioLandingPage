@@ -8,13 +8,13 @@ const QnA = ({ question, answer }) => {
       <div className="m-2 w-1/2">
         <h4
           onClick={() => setOpen(!open)}
-          className="cursor-pointer text-black font-semibold py-3 px-6 border-2 overflow-hidden w-full rounded-lg text-start relative"
+          className="cursor-pointer text-black select-none font-semibold py-3 px-6 border-[1px] overflow-hidden  w-full rounded-lg text-start relative"
         >
           <span>{open ? "- " : "+"}</span>{" "}
           {question ? question : "Lorem ipsum dolor, sit amet consectetur ?"}
         </h4>
         <p
-          className="text-black text-sm p-4 w-full text-start"
+          className="text-black text-sm p-4  w-full text-start"
           style={{ display: open ? "inherit" : "none" }}
         >
           {answer
@@ -22,7 +22,9 @@ const QnA = ({ question, answer }) => {
             : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
           cupiditate commodi ratione consectetur minus a recusandae, quisquam
           sed minima ad ducimus nisi maiores sint maxime repellendus nesciunt
-          corporis placeat sunt.`}
+          corporis placeat ratione consectetur minus a recusandae, quisquam
+          sed minima ad ducimus nisi maiores sint maxime repellendus nesciunt
+          corporis placeatsunt.`}
         </p>
       </div>
     </div>

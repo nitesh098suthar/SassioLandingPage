@@ -5,11 +5,11 @@ import Card from "../shared/Card";
 
 const Review = () => {
   return (
-    <div className="bg-white w-screen pt-4 pb-10">
+    <div className="bg-white  w-full pt-4 pb-10">
       <div className="title py-14">
         <Title head="User Review & Feedback" />
       </div>
-      <div className="flex w-[70%] mx-auto">
+      <div className="flex w-[82%]  mx-auto">
         {reviewData?.map((data) => (
           <Card key={data.name} data={data} />
         ))}

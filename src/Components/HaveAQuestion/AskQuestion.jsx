@@ -4,11 +4,11 @@ import QnA from "../shared/QnA";
 import { qna } from "../../api/data";
 const AskQuestion = () => {
   return (
-    <div className="bg-white w-screen">
+    <div className="bg-white w-full mt-14">
       <div>
         <Title head="Have a Question ?" />
       </div>
-      <div className="py-10">
+      <div className="my-12">
         {qna?.map((item) => (
           <QnA question={item.question} answer={item.answer} />
         ))}

@@ -4,10 +4,10 @@ import everythingImg from "../../assets/images/Everything_you_need_home_page-tra
 import Menu from "../shared/Menu";
 const EverythingYouNeed = () => {
   return (
-    <div className="h-full w-screen bg-white m-0 p-0">
-      <div className="bg-everything-need min-h-screen w-screen bg-cover bg-center bg-no-repeat">
-        <div className="bg-everything-need-asset min-h-screen w-screen bg-contain bg-center bg-no-repeat">
-          <div className="pt-16">
+    <div className="h-[116vh] w-full bg-white m-0 p-0">
+      <div className="bg-everything-need min-w-screen h-full bg-contain bg-center bg-no-repeat ">
+        <div className="bg-everything-need-asset min-h-screen h-screen bg-contain bg-center bg-no-repeat mb-20">
+          <div className="pt-24 ">
             <Title head="Everything you need" />
           </div>
           {/* box */}
@@ -23,7 +23,7 @@ const EverythingYouNeed = () => {
                 <button>Get Started</button>
               </div>
             </div>
-            <div className="imgContainer w-[50%]">
+            <div className="imgContainer w-[45%]">
               <img
                 src={everythingImg}
                 alt=""

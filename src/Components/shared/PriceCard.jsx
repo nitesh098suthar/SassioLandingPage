@@ -4,9 +4,17 @@ const PriceCard = ({ data }) => {
   const color = data.title === "Professional" ? "white" : "black";
   return (
     <div
-      className="container w-[16vw] bg-white rounded-lg my-14 p-6 mx-2 shadow-lg"
-      style={{ backgroundColor: data.title === "Professional" && "blueviolet" }}
+      className="  w-[18vw] bg-white rounded-lg my-14 p-8 mx-6 hover:shadow-lg text-center"
+      style={{ backgroundColor: data.title === "Professional" && "navy" }}
     >
+      {data.title === "Professional" && <h1
+        className="text-xs font-normal bg-sky-600 py-2 mb-4 w-fit mx-auto px-6 rounded-full"
+        style={{
+          color,
+        }}
+      >
+        Most Popular
+      </h1> }
       <h1
         className="text-sm font-semibold"
         style={{
@@ -16,13 +24,16 @@ const PriceCard = ({ data }) => {
         {data.title}
       </h1>
       <h1
-        className="text-2xl font-bold"
+        className="text-3xl font-bold p-3"
         style={{
           color,
         }}
       >
         {data.charge}
       </h1>
+      <p style={{ color }} className="text-center text-xs mb-10 opacity-70">
+       per month
+      </p>
       <p style={{ color }} className="text-start text-xs my-4">
         Standard limited submissions, active for 30 days
       </p>
@@ -44,9 +55,10 @@ const PriceCard = ({ data }) => {
         </li>
       </ul>
       <button
+      className="mt-8"
         style={{
           backgroundColor:
-            data.title === "Professional" ? "white" : "blueviolet",
+            data.title === "Professional" ? "white" : "navy",
           color: data.title === "Professional" ? "black" : "white",
         }}
       >
