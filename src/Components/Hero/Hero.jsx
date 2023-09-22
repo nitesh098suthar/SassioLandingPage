@@ -10,7 +10,7 @@ const Hero = () => {
           <Title
             color="white"
             head="Let your imagination run wild"
-            text="Build responsive, mobile-first projects on the web with the world's most popular frontend components library"
+            
           />
           <div className="grid place-items-center my-10">
             <div className="bg-white h-fit rounded-lg w-fit px-2 py-1">
@@ -19,7 +19,7 @@ const Hero = () => {
                 placeholder="Enter your Email Address"
                 className="bg-white px-1 mx-1 border-none outline-none text-gray-600"
               />
-              <button className="bg-teal-400">Get Started</button>
+              <button className="bg-[#32C89A]">Get Started</button>
             </div>
           </div>
         </div>

@@ -1,14 +1,13 @@
 import React from "react";
 
-const Title = ({ head, text = null, color = "#242424", center='center' }) => {
+const Title = ({ head, color = "#242424", center='center' }) => {
   return (
     <div>
-      <h1 className="title" style={{ color , textAlign: center}}>
+      <h1 className="title text-[41px]" style={{ color , textAlign: center}}>
         {head}
       </h1>
-      <p className="text-sm" style={{ color, textAlign: center }}>
-        {text ??
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+      <p className="text-sm leading-7  " style={{ color, textAlign: center }}>
+      Build responsive, mobile-first projects on the web with the world's most popular <br /> frontend components library
       </p>
     </div>
   );

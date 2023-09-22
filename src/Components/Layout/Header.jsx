@@ -6,12 +6,12 @@ const Header = () => {
       <div className="flex justify-between items-center h-12 pt-10 px-4 w-full">
         <div className="h-20 logo flex items-center">
           <img src={logo} alt="loading" className="h-full w-auto block" />
-          <h1 className="text-xl font-bold ml-4">Sassio</h1>
+          <h1 className="text-xl font-bold ml-4 text-white">Sassio</h1>
         </div>
         <div className="links">
-          <ul className="flex gap-6 font-semibold">
+          <ul className="flex gap-6 font-semibold text-white">
             <li>Home</li>
-            <li>page</li>
+            <li>Page</li>
             <li>Portfolio</li>
             <li>Shop</li>
             <li>Blog</li>
@@ -19,7 +19,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="btn">
-          <button className="bg-teal-500">Sign in</button>
+          <button className="text-white bg-[rgba(70,91,182)]">Sign in</button>
         </div>
       </div>
     </>
